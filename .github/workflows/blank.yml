@@ -1,0 +1,13 @@
+name: Crawl hydrodata(hbsl) schedulely
+
+on:
+  repository_dispatch:
+    types: [datong]
+    
+jobs:
+  crawl-hbsl:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout scripts repo
+        uses: actions/checkout@v3
