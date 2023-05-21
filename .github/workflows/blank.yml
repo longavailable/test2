@@ -11,3 +11,7 @@ jobs:
 
       - name: checkout scripts repo
         uses: actions/checkout@v3
+      
+      - name: print hello
+        run: |
+          echo "Hello, world."
